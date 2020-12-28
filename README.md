@@ -1,6 +1,6 @@
 # data-digger
 
-This is a programming beginner's project aimed at financial news sentiment analysis;)
+This is a programming beginner's project aimed at financial news sentiment analysis:wink:
 
 The project is inspired by: https://towardsdatascience.com/reading-the-markets-machine-learning-versus-the-financial-news-bcd3704f37b8.
 
