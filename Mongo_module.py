@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 '''this module is the central part of the project 
 equipped with the following functionality:
     * running a webscraper 
