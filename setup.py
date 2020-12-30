@@ -26,13 +26,16 @@ setup(
         'beautifulsoup4>=4.8.2',
         'dnspython>=2.0.0',
         'nltk==3.5',
-        'numpy>=1.17.2',
+        'numpy==1.19.3', # restricted to one version because of https://tinyurl.com/y3dm3h86
+        'pandas-market-calendars>=1.6.1',
         'pymongo>=3.11.1',
+        'python-dotenv>=0.15.0',
         'pytz>=2019.2',
         'Scrapy >= 2.3.0',
+        'scrapy-fake-useragent>=1.4.4',
         'Twisted==20.3.0'
     ],
-    packages=find_packages('data_digger', 'data_digger.stack'),
+    packages= ['data_digger', 'data_digger.stack'],
     scripts = ['data_digger/main.py'],
     python_requires='>=3.6',
 )
