@@ -7,9 +7,9 @@
 '''
 
 import re 
-import nltk
 import numpy as np
 from itertools import chain,product,starmap
+from nltk import sent_tokenize
 
 def ticker_extraction (text):
     '''looks up for NYSE and NASDAQ stock tickers 
@@ -51,7 +51,7 @@ def tokenize(text):
     
     dot = r'\.(?=[A-Z])'
     subst = re.sub(dot, r'. ', text)
-    sents = nltk.sent_tokenize(subst)
+    sents = sent_tokenize(subst)
     for s in sents:
         yield s
         
