@@ -40,7 +40,7 @@ To fetch historical quotes of stocks an article largely relates to, before and a
 
     main.py --quotes
 
-To label the articles with either 1 or 0 tag, depending on whether the mentioned stocks demonstrated abnormal returns right after the publication or not:
+To label the articles with either 1 or 0 tag, depending on whether a publication was followed by abnormal returns of a stock the article refers to:
 
     main.py --labels
 
