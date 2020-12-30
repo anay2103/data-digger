@@ -1,0 +1,13 @@
+'''defines Scrapy Fields to store scraped data:
+    * title - an article title
+    * url - an article url address
+    * time - time when the article was published scraped from html
+    * article - text of article 
+'''
+
+from scrapy.item import Item, Field
+class StackItem(Item):
+    title = Field()
+    url = Field()
+    time = Field()
+    article = Field()
