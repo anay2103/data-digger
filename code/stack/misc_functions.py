@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 '''this module contains miscellaneous functions:
 
     * ticker_extraction - searches for stock tickers using regex
