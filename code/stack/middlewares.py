@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 from scrapy import signals
 from scrapy.http import Request
 from scrapy import Request, exceptions
