@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
 
 
 '''This is a standard Scrapy spider scraping latest stock market news
