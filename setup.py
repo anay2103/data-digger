@@ -35,7 +35,7 @@ setup(
         'scrapy-fake-useragent>=1.4.4',
         'Twisted==20.3.0'
     ],
-    packages= ['data_digger', 'data_digger.stack'],
+    packages= ['data_digger', 'data_digger.stack', 'data_digger.stack.spider' ],
     scripts = ['data_digger/main.py'],
     python_requires='>=3.6',
 )
