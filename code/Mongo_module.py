@@ -30,13 +30,12 @@ import time
 
 from datetime import datetime
 from functools import partial 
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from data_digger.stack.misc_functions import * 
 import data_digger.Alpaca as alp
-    
-    
-env_path = Path ('.')/'.env'
-load_dotenv(dotenv_path=env_path)     
+
+# load environment variables
+load_dotenv(find_dotenv('env.env'))    
 
 logging.basicConfig(
         format="%(asctime)s %(levelname)s:%(name)s: %(message)s",
