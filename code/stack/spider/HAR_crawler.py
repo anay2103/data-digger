@@ -127,7 +127,7 @@ class HARSpider(Spider):
                  time_tag = el.parent.find (class_='item-date')
                  time_search= re.search (r'(?<=>).+?(?=<)', str (time_tag))
                  try:
-                     time = datetime.strptime (time_search.group (0), '%a, %b. %d, %I:%M %p').replace(year = self.year)
+                     time = datetime.strptime (time_search.group (0), '%b. %d, %Y, %I:%M %p').replace(year = self.year)
                  except Exception as e:
                     if 'Today' in time_search.group(0):
                         date = datetime.now(self.tz)
