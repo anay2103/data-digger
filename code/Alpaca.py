@@ -21,12 +21,11 @@ import os
 import numpy as np 
 import sys 
 import operator
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 
-
-env_path = Path ('stack')/'.env'
-load_dotenv(dotenv_path=env_path)
+#load environment variables
+load_dotenv(find_dotenv('env.env'))
 
 logging.basicConfig(
         format="%(asctime)s %(levelname)s:%(name)s: %(message)s",
