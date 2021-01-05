@@ -9,12 +9,12 @@ Environment variables are loaded from the parent directory.
 '''
 
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 from scrapy.utils.log import configure_logging
 
-env_path = Path ('..')/'.env'
-load_dotenv(dotenv_path=env_path) 
+#load environment variables
+load_dotenv(find_dotenv('env.env'))
 
 configure_logging(install_root_handler=False)
 
